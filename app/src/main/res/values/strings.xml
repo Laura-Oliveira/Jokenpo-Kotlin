@@ -11,4 +11,7 @@
     <string name="txt_description_image"> Monuv</string>
     <string name="hint_player_name"> Insira Nome Jogador(a)</string>
     <string name="btn_play"> Jogar</string>
+
+    <!-- =========== RANKING LAYOUT ===========  -->
+    <string name="txt_titleRanking"> Ranking</string>
 </resources>
