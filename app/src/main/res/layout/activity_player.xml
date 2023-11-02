@@ -38,7 +38,7 @@
             app:layout_constraintTop_toBottomOf="@+id/img_logo" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/input_player_name"
+            android:id="@+id/input_playerName"
             style="@style/TextBox"
             android:layout_marginStart="4dp"
             android:layout_marginTop="32dp"
@@ -50,10 +50,10 @@
             app:layout_constraintTop_toBottomOf="@+id/txt_title">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edit_text_player_name"
+                android:id="@+id/editText_playerName"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
-                android:inputType="text|textNoSuggestions"
+                android:inputType="text"
                 android:maxLines="1"
                 android:textColorHint="#546E7A"
                 tools:ignore="TouchTargetSizeCheck" />
@@ -61,12 +61,12 @@
 
         <!-- =============== BUTTON =============== -->
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_login"
+            android:id="@+id/btn_play"
             style="@style/Button"
             android:layout_width="match_parent"
             android:layout_marginTop="8dp"
             android:text="@string/btn_play"
-            app:layout_constraintTop_toBottomOf="@+id/input_player_name"
+            app:layout_constraintTop_toBottomOf="@+id/input_playerName"
             tools:layout_editor_absoluteX="291dp" />
 
         <View
@@ -75,7 +75,7 @@
             android:layout_marginTop="50dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+            app:layout_constraintTop_toBottomOf="@+id/btn_play" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

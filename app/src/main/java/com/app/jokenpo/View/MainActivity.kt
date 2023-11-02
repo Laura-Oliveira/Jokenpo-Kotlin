@@ -1,16 +1,30 @@
 package com.app.jokenpo.View
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
-import com.app.jokenpo.R
 import android.view.View
-import java.util.Random
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import com.app.jokenpo.R
+import java.util.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity()
+{
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    //val playerName = getIntent().getStringExtra("player")
+    var txtPlayerName:TextView? = null
+    var playerName:String? = null
+  //  val objIntent:Intent = intent
+
+
+    override fun onCreate(savedInstanceState: Bundle?)
+    {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        txtPlayerName = findViewById(R.id.txt_playerName)
+        val playerNameExtra = intent.getStringExtra("player")
+        txtPlayerName!!.text = playerNameExtra
     }
 
     fun playGame(view: View)

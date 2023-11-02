@@ -32,7 +32,7 @@
             style="@style/SubTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/playerNameTextView"
+            android:layout_below="@id/txt_playerName"
             android:layout_marginTop="40dp"
             android:text="@string/txt_titlePlayer"
             app:layout_constraintEnd_toEndOf="parent"
@@ -41,9 +41,11 @@
             app:layout_constraintTop_toBottomOf="@+id/view_title" />
 
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/playerNameTextView"
+            android:id="@+id/txt_playerName"
             style="@style/Text"
             android:layout_below="@id/rockButton"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="40dp"
             android:text="Jogador"
             app:layout_constraintStart_toEndOf="@+id/titlePlayerTextView"
             app:layout_constraintTop_toBottomOf="@+id/view_title" />
@@ -91,7 +93,7 @@
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/txt_titleComputer"
             style="@style/SubTitle"
-            android:layout_below="@id/playerNameTextView"
+            android:layout_below="@id/txt_playerName"
             android:layout_marginTop="40dp"
             android:text="@string/txt_titleComputer"
             app:layout_constraintEnd_toEndOf="parent"
@@ -102,7 +104,7 @@
             android:id="@+id/txt_computerName"
             android:layout_width="92dp"
             android:layout_height="21dp"
-            android:layout_below="@id/playerNameTextView"
+            android:layout_below="@id/txt_playerName"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="8dp"
             android:text="Computer"
@@ -124,7 +126,7 @@
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/titleResultsTextView"
             style="@style/SubTitle"
-            android:layout_below="@id/playerNameTextView"
+            android:layout_below="@id/txt_playerName"
             android:layout_marginTop="40dp"
             android:text="@string/txt_titleResults"
             app:layout_constraintEnd_toEndOf="parent"
