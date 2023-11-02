@@ -12,16 +12,20 @@ import com.app.jokenpo.View.MainActivity
 
 class PlayerActivity : AppCompatActivity()
 {
+    private lateinit var editTextPlayerName:EditText
+    private lateinit var btnPlay:Button
+    private lateinit var playerName:String
+
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_player)
 
-        var editTextPlayerName:EditText = findViewById(R.id.editText_playerName)
-        var btnPlay:Button = findViewById(R.id.btn_play)
+        editTextPlayerName = findViewById(R.id.editText_playerName)
+        btnPlay = findViewById(R.id.btn_play)
 
         btnPlay.setOnClickListener {
-            var playerName = editTextPlayerName.text.toString()
+            playerName = editTextPlayerName.text.toString()
             Log.d("player antes de entrar na funcao", playerName)
             openGamePage(playerName)
         }
