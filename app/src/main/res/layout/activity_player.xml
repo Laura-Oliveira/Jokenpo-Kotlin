@@ -1,6 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".Controller.PlayerActivity"
+    android:background="@color/backgroundColor">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_logo"
+            style="@style/Logo"
+            android:contentDescription="@string/txt_description_image"
+            android:src="@mipmap/ic_logo_round"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_title"
+            style="@style/Title"
+            android:layout_marginTop="16dp"
+            android:text="@string/app_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_logo" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_player_name"
+            style="@style/TextBox"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="4dp"
+            android:hint="@string/hint_player_name"
+            app:endIconMode="clear_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_title">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text_player_name"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:inputType="text|textNoSuggestions"
+                android:maxLines="1"
+                android:textColorHint="#546E7A"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- =============== BUTTON =============== -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login"
+        style="@style/Button"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:text="@string/btn_play"
+        app:layout_constraintTop_toBottomOf="@+id/input_player_name"
+        tools:layout_editor_absoluteX="291dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

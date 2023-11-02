@@ -59,7 +59,7 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/rockButton"
             style="@style/Button"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="50dp"
             android:onClick="playGame"
             android:tag="rock"
@@ -83,11 +83,9 @@
             style="@style/Button"
             android:layout_marginStart="8dp"
             android:layout_marginTop="50dp"
-            android:layout_marginEnd="16dp"
             android:onClick="playGame"
             android:tag="scissors"
-            android:text="Scissors"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:text="Scissor"
             app:layout_constraintStart_toEndOf="@+id/paperButton"
             app:layout_constraintTop_toBottomOf="@+id/titlePlayerTextView" />
 
