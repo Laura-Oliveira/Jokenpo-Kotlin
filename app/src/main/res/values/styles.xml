@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundColor"> @color/colorPrimary</item>
+    </style>
+
+    <style name="Logo" parent="Widget.AppCompat.ImageButton">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">100dp</item>
+        <item name="layout_constraintHorizontal_bias">0.5</item>
+    </style>
+
+    <style name="Title" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor"> @color/white</item>
+        <item name="layout_constraintVertical_bias">0.15</item>
+        <item name="fontFamily">sans-serif-black</item>
+    </style>
+
+    <style name="SubTitle" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor"> @color/white</item>
+        <item name="layout_constraintVertical_bias">0.15</item>
+        <item name="fontFamily">sans-serif-black</item>
+    </style>
+
+    <style name="TextBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="boxBackgroundColor">@color/background_textbox</item>
+    </style>
+
+    <style name="Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="backgroundTint">@color/btn_color</item>
+        <item name="textAllCaps"> true </item>
+        <item name="textAppearanceButton">@color/txt_color</item>
+        <item name="android:textSize">15sp</item>
+        <item name="fontFamily">sans-serif-black</item>
+    </style>
+
+    <style name="TitleRadioGroup" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">sans-serif-black</item>
+    </style>
+
+    <style name="RadioGroup" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="RadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:minWidth">100dp</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+</resources>

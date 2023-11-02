@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         val computerChoice = generateComputerChoice()
 
         val result = determineWinner(playerChoice, computerChoice)
-        displayResult(playerChoice, computerChoice, result)
+       // displayResult(playerChoice, computerChoice, result)
     }
 
     private fun generateComputerChoice(): String {
@@ -41,10 +41,10 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun displayResult(playerChoice: String, computerChoice: String, result: String)
+  /*  private fun displayResult(playerChoice: String, computerChoice: String, result: String)
     {
         playerChoiceTextView.text = "Your choice: $playerChoice"
         computerChoiceTextView.text = "Computer's choice: $computerChoice"
         resultTextView.text = result
-    }
+    } */
 }
