@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Jokenpo Game</string>
+    <string name="app_name">Jokenpo</string>
 
     <!-- =========== MAIN LAYOUT ===========  -->
     <string name="txt_title"> Jokenpo Game</string>

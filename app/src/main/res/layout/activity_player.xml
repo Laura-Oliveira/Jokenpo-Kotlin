@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Controller.PlayerActivity"
-    android:background="@color/backgroundColor">
+    android:background="@color/backgroundColor"
+    tools:context=".Controller.PlayerActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/view_title"
+            style="@style/Separator"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/img_logo"
@@ -49,13 +60,22 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- =============== BUTTON =============== -->
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_login"
-        style="@style/Button"
-        android:layout_width="match_parent"
-        android:layout_marginTop="8dp"
-        android:text="@string/btn_play"
-        app:layout_constraintTop_toBottomOf="@+id/input_player_name"
-        tools:layout_editor_absoluteX="291dp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_login"
+            style="@style/Button"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:text="@string/btn_play"
+            app:layout_constraintTop_toBottomOf="@+id/input_player_name"
+            tools:layout_editor_absoluteX="291dp" />
+
+        <View
+            android:id="@+id/view_bottom"
+            style="@style/Separator"
+            android:layout_marginTop="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_login" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
