@@ -37,6 +37,7 @@ Visando **criar uma solução digital para o jogo original**.
   <img src="./img/michin_logo.jpeg" width="500" height="500"/>
  </p>
  
+ Quer tirar sua ideia do papel e tranformar em um aplicativo? <a href="https://linktr.ee/Laura_Oliveira"> **Clique Aqui** </a>
 -------------------------------------------------------------------------------------------------------------------------------------------
 
 # Jokenpo App (en)
@@ -78,4 +79,5 @@ To **create a digital solution for the original game**.
   <img src="./img/michin_logo.jpeg" width="500" height="500"/>
 </p>
 
+Do you want to build your mobile app? <a href="https://linktr.ee/Laura_Oliveira"> **Click Here** </a>
 -------------------------------------------------------------------------------------------------------------------------------------------
