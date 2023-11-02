@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Jokenpo</string>
+
+    <!-- =========== MAIN LAYOUT ===========  -->
+    <string name="txt_title"> Jokenpo Game</string>
+    <string name="txt_titlePlayer"> Faça sua Jogada: </string>
+    <string name="txt_titleComputer"> Oponente </string>
+    <string name="txt_titleResults"> Jogadas </string>
 </resources>
