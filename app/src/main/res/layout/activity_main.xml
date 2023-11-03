@@ -45,7 +45,7 @@
             style="@style/Text"
             android:layout_below="@id/rockButton"
             android:layout_marginStart="12dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="41dp"
             android:text="Jogador"
             app:layout_constraintStart_toEndOf="@+id/titlePlayerTextView"
             app:layout_constraintTop_toBottomOf="@+id/view_title" />
@@ -94,9 +94,9 @@
             android:id="@+id/txt_titleComputer"
             style="@style/SubTitle"
             android:layout_below="@id/txt_playerName"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="40dp"
             android:text="@string/txt_titleComputer"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view_Computer" />
 
@@ -106,14 +106,15 @@
             android:layout_height="21dp"
             android:layout_below="@id/txt_playerName"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="8dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="40dp"
             android:text="Computer"
             android:textColor="@color/white"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txt_titleComputer" />
+            app:layout_constraintHorizontal_bias="0.01"
+            app:layout_constraintStart_toEndOf="@+id/txt_titleComputer"
+            app:layout_constraintTop_toBottomOf="@+id/view_Computer" />
 
         <View
             android:id="@+id/view_endComputer"
@@ -134,7 +135,7 @@
             app:layout_constraintTop_toBottomOf="@+id/view_endComputer" />
 
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/resultTextView"
+            android:id="@+id/txt_result"
             style="@style/Text"
             android:layout_marginTop="24dp"
             android:text=""
@@ -142,6 +143,20 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/titleResultsTextView" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_ranking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginTop="50dp"
+            android:contentDescription="@string/btn_ranking"
+            android:src="@drawable/ic_ranking"
+            android:text="Ranking"
+            app:elevation="6dp"
+            app:fabSize="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_endComputer"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

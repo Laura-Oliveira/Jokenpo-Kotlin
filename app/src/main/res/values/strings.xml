@@ -4,8 +4,9 @@
     <!-- =========== MAIN LAYOUT ===========  -->
     <string name="txt_title"> Jokenpo Game</string>
     <string name="txt_titlePlayer"> Faça sua Jogada: </string>
-    <string name="txt_titleComputer"> Oponente </string>
+    <string name="txt_titleComputer"> Oponente: </string>
     <string name="txt_titleResults"> Jogadas </string>
+    <string name="btn_ranking"> Ranking</string>
 
     <!-- =========== PLAYER LAYOUT ===========  -->
     <string name="txt_description_image"> Monuv</string>

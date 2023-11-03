@@ -29,14 +29,34 @@
             app:layout_constraintTop_toBottomOf="@+id/title_ranking" />
 
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/resultTextView"
+            android:id="@+id/txt_score"
             style="@style/SubTitle"
-            android:layout_marginTop="24dp"
-            android:text="Resultados"
+            android:layout_marginTop="32dp"
+            android:text="Score: 0 - 0"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view_title" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/backButton"
+            style="@style/Button"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="30dp"
+            android:text="Back"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_title2" />
+
+        <View
+            android:id="@+id/view_title2"
+            style="@style/Separator"
+            android:layout_marginTop="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_score" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
