@@ -24,7 +24,7 @@ class RankingActivity : AppCompatActivity() {
         val computerScore = intent.getIntExtra("computerScore", 0)
 
         // Exibe a pontuação na interface do usuário
-        scoreTextView.text = "Score: Player: $playerScore - Computer: $computerScore"
+        scoreTextView.text = "Player: $playerScore - Computer: $computerScore"
 
         // Configura um ouvinte de clique para o botão "Back to Game"
         backButton.setOnClickListener {

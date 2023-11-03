@@ -38,7 +38,7 @@ class PlayerActivity : AppCompatActivity()
             val objIntent = Intent(this, MainActivity::class.java)
             objIntent.putExtra("player", playerNameGame)
             startActivity(objIntent)
-            Toast.makeText(this, "Bom Jogo!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Bom Jogo!", Toast.LENGTH_LONG).show();
         }
         else
         {

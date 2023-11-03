@@ -146,17 +146,19 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_ranking"
+            style="@style/Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginStart="45dp"
             android:contentDescription="@string/btn_ranking"
             android:src="@drawable/ic_ranking"
             android:text="Ranking"
             app:elevation="6dp"
             app:fabSize="normal"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view_endComputer"/>
+            app:layout_constraintStart_toEndOf="@+id/titleResultsTextView"
+            app:layout_constraintTop_toBottomOf="@+id/view_endComputer" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

@@ -14,5 +14,6 @@
     <string name="btn_play"> Jogar</string>
 
     <!-- =========== RANKING LAYOUT ===========  -->
-    <string name="txt_titleRanking"> Ranking</string>
+    <string name="txt_titleRanking"> Ranking </string>
+    <string name="btn_back"> Back </string>
 </resources>
