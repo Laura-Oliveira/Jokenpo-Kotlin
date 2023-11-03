@@ -26,7 +26,6 @@ class RankingActivity : AppCompatActivity() {
         // Exibe a pontuação na interface do usuário
         scoreTextView.text = "Player: $playerScore - Computer: $computerScore"
 
-        // Configura um ouvinte de clique para o botão "Back to Game"
         backButton.setOnClickListener {
             finish() // Fecha a atividade de ranking e volta para o jogo
         }

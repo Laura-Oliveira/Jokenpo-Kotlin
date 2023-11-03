@@ -7,9 +7,6 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.app.jokenpo.R
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import java.util.*
-
 
 class MainActivity : AppCompatActivity()
 {
@@ -18,10 +15,8 @@ class MainActivity : AppCompatActivity()
     private lateinit var playerName: String
     private lateinit var computerName: String
     private lateinit var resultTextView: TextView
-    private lateinit var btnRanking:Button
     private var playerScore = 0
     private var computerScore = 0
-    private lateinit var totalScore:TextView
 
     override fun onCreate(savedInstanceState: Bundle?)
     {
@@ -38,7 +33,6 @@ class MainActivity : AppCompatActivity()
         computerName = "Computer"
 
         resultTextView = findViewById(R.id.txt_result)
-       // resultTextView.text = "Resultados"
 
         val rockButton = findViewById<Button>(R.id.rockButton)
         val paperButton = findViewById<Button>(R.id.paperButton)
@@ -81,7 +75,6 @@ class MainActivity : AppCompatActivity()
         { playerScore++ }
         else if (result == -1)
         { computerScore++ }
-        //updateScoreView()
         resultTextView.text = "$resultText\n${resultTextView.text}"
     }
 
@@ -107,6 +100,5 @@ class MainActivity : AppCompatActivity()
         intent.putExtra("playerScore", playerScore)
         intent.putExtra("computerScore", computerScore)
         startActivity(intent)
-
     }
 }
