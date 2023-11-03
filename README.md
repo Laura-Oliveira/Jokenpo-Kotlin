@@ -31,10 +31,10 @@ Visando **criar uma solução digital para o jogo original**.
 
 ## Telas
 <p align="center">
-  <img src="./img/print_1.jpg" width="250" height="500"/>
-  <img src="./img/print_2.jpg" width="250" height="500"/>
-  <img src="./img/qrcode_maker.png" width="500" height="500"/>
-  <img src="./img/michin_logo.jpeg" width="500" height="500"/>
+  <img src="./img/screen.png" width="250" height="500"/>
+  <img src="./img/screen-1.png" width="250" height="500"/>
+  <img src="./img/screen-2.png" width="250" height="500"/>
+  <img src="./img/screen-3.png" width="250" height="500"/>
  </p>
  
  Quer tirar sua ideia do papel e tranformar em um aplicativo? <a href="https://linktr.ee/Laura_Oliveira"> **Clique Aqui** </a>
@@ -73,11 +73,11 @@ To **create a digital solution for the original game**.
 
 ## Screens
 <p align="center">
-  <img src="./img/print_1.jpg" width="250" height="500"/>
-  <img src="./img/print_2.jpg" width="250" height="500"/>
-  <img src="./img/qrcode_maker.png" width="500" height="500"/>
-  <img src="./img/michin_logo.jpeg" width="500" height="500"/>
-</p>
+  <img src="./img/screen.png" width="250" height="500"/>
+  <img src="./img/screen-1.png" width="250" height="500"/>
+  <img src="./img/screen-2.png" width="250" height="500"/>
+  <img src="./img/screen-3.png" width="250" height="500"/>
+ </p>
 
 Do you want to build your mobile app? <a href="https://linktr.ee/Laura_Oliveira"> **Click Here** </a>
 -------------------------------------------------------------------------------------------------------------------------------------------
