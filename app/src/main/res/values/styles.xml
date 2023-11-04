@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- =========== APP THEME ===========  -->
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="backgroundColor"> @color/colorPrimary</item>
+    </style>
+
+    <!-- =========== HEADLINE ===========  -->
+    <style name="Separator" parent="Theme.MaterialComponents">
+        <item name="android:layout_width"> 195dp </item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:background"> @color/pink</item>
     </style>
 
     <style name="Logo" parent="Widget.AppCompat.ImageButton">
@@ -37,23 +46,7 @@
         <item name="fontFamily">sans-serif-black</item>
     </style>
 
-    <style name="Separator" parent="Theme.MaterialComponents">
-        <item name="android:layout_width"> 195dp </item>
-        <item name="android:layout_height">10dp</item>
-        <item name="android:layout_marginTop">16dp</item>
-        <item name="android:background"> @color/pink</item>
-    </style>
-
-    <style name="Text" parent="Theme.MaterialComponents">
-        <item name="android:layout_width"> wrap_content </item>
-        <item name="android:layout_height"> wrap_content </item>
-        <item name="android:layout_centerHorizontal"> true </item>
-        <item name="android:layout_marginStart"> 8dp </item>
-        <item name="android:layout_marginTop"> 36dp </item>
-        <item name="android:textColor"> @color/white </item>
-        <item name="android:textSize"> 17sp </item>
-    </style>
-
+    <!-- =========== FORMS ===========  -->
     <style name="TextBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">55dp</item>
@@ -68,6 +61,17 @@
         <item name="textAppearanceButton">@color/txt_color</item>
         <item name="android:textSize">15sp</item>
         <item name="fontFamily">sans-serif-black</item>
+    </style>
+
+    <!-- =========== TEXTS ===========  -->
+    <style name="Text" parent="Theme.MaterialComponents">
+        <item name="android:layout_width"> wrap_content </item>
+        <item name="android:layout_height"> wrap_content </item>
+        <item name="android:layout_centerHorizontal"> true </item>
+        <item name="android:layout_marginStart"> 8dp </item>
+        <item name="android:layout_marginTop"> 36dp </item>
+        <item name="android:textColor"> @color/white </item>
+        <item name="android:textSize"> 17sp </item>
     </style>
 
     <style name="RankingItemText" parent="">

@@ -32,7 +32,7 @@
             android:id="@+id/txt_score"
             style="@style/SubTitle"
             android:layout_marginTop="32dp"
-            android:text=" 0 - 0"
+            android:text="@string/txt_score"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
