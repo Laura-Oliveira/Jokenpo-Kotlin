@@ -2,35 +2,42 @@ package com.app.jokenpo.View
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.app.jokenpo.Model.Computer
 import com.app.jokenpo.R
+import retrofit2.*
+import retrofit2.converter.gson.GsonConverterFactory
 
 class MainActivity : AppCompatActivity()
 {
 
     private lateinit var txtPlayerName:TextView
     private lateinit var playerName: String
+    private lateinit var txtComputerName:TextView
     private lateinit var computerName: String
     private lateinit var resultTextView: TextView
     private var playerScore = 0
     private var computerScore = 0
+    private lateinit var jsonPlaceholder: APIInterface
 
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
-
         txtPlayerName = findViewById(R.id.txt_playerName)
         val playerNameExtra = intent.getStringExtra("player")
-        txtPlayerName!!.text = playerNameExtra
+        txtPlayerName.text = playerNameExtra
 
         playerName = intent.getStringExtra("player") ?: "Player"
-        computerName = "Computer"
+      //  computerName = "Computer"
+        txtComputerName = findViewById(R.id.txt_computerName)
+        computerName = txtComputerName.toString()
 
         resultTextView = findViewById(R.id.txt_result)
 
@@ -43,6 +50,14 @@ class MainActivity : AppCompatActivity()
         paperButton.setOnClickListener { playGame("paper") }
         scissorsButton.setOnClickListener { playGame("scissors") }
         btnRanking.setOnClickListener { showRanking() }
+
+        val retrofit = Retrofit.Builder()
+            .baseUrl("https://api.toys/api/medieval_name/")
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+
+        jsonPlaceholder = retrofit.create(APIInterface::class.java)
+        getComputerName()
     }
 
     private fun playGame(playerChoice: String) {
@@ -101,4 +116,33 @@ class MainActivity : AppCompatActivity()
         intent.putExtra("computerScore", computerScore)
         startActivity(intent)
     }
+
+    fun getComputerName()
+    {
+        val call: Call<Computer> = jsonPlaceholder.getComputer()
+
+        call.enqueue(object : Callback<Computer>
+        {
+            override fun onResponse(call: Call<Computer>, response: Response<Computer>) {
+                if (response.isSuccessful)
+                {
+                    val computer = response.body()
+                    if(computer != null)
+                    {
+                        val computerNameResponse = computer.name ?: "Nome do Computador não encontrado"
+                        Toast.makeText(this@MainActivity, "Nome do Computador: $computerNameResponse", Toast.LENGTH_SHORT).show()
+                        Log.d("Nome do Computador", computerNameResponse)
+                        Log.d("Response Code", response.code().toString())
+                    }
+                }
+            }
+
+            override fun onFailure(call: Call<Computer>, t: Throwable)
+            {
+                t.message?.let { Log.d("Erro ao recuperar dados", it) }
+                Toast.makeText(this@MainActivity, t.message, Toast.LENGTH_SHORT).show()
+            }
+        })
+    }
+
 }

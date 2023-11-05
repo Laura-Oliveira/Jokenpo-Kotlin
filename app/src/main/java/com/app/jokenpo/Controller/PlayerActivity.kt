@@ -26,7 +26,6 @@ class PlayerActivity : AppCompatActivity()
 
         btnPlay!!.setOnClickListener {
             playerName = editTextPlayerName.text.toString()
-            Log.d("player antes de entrar na funcao", playerName)
             openGamePage(playerName)
         }
     }
