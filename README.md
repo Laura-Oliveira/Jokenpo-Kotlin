@@ -2,8 +2,6 @@
 
 Jokenpo App é um **Aplicativo Android** que visa **simular o jogo jokenpo (pedra, papel e tesoura)**.
 
-Visando **criar uma solução digital para o jogo original**.
-
 ## Objetivo 
 
 **Criar uma solução digital para o jogo original jokenpo**, de modo que possa ser jogado em dispositivos android.
