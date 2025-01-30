@@ -6,7 +6,7 @@ Jokenpo App é um **Aplicativo Android** que visa **simular o jogo jokenpo (pedr
 
 **Criar uma solução digital para o jogo original jokenpo**, de modo que possa ser jogado em dispositivos android.
 
-### 💻Tecnologias:
+### 💻Tecnologia:
 * Android;
 * Kotlin;
 * Android SDK;
@@ -16,14 +16,14 @@ Jokenpo App é um **Aplicativo Android** que visa **simular o jogo jokenpo (pedr
 * XML & Constraintlayout;
 * Gradle.
 
-### 🛠️Tools:
+### 🛠️Ferramentas:
 * Git/Github;
 * Android Studio.
 
 ### ⏱️Metodologias Ágeis:
 • Kanban.
 
-### Status: Em Desenvolvimento
+### Status: Completo
 
 ### Checkout on Playstore: 
 
@@ -65,7 +65,7 @@ To **create a digital solution for the original game**.
 ### ⏱️Agile Methodologies:
 * Kanban.
 
-### Status: On Going.
+### Status: Complete
 
 ### Checkout on Playstore: 
 
